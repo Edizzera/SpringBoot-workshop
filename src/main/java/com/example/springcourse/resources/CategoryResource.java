@@ -1,9 +1,7 @@
 package com.example.springcourse.resources;
 
 import com.example.springcourse.entities.Category;
-import com.example.springcourse.entities.User;
 import com.example.springcourse.services.CategoryService;
-import com.example.springcourse.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

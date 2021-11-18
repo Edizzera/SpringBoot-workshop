@@ -1,8 +1,7 @@
 package com.example.springcourse.resources;
 
-import com.example.springcourse.entities.Category;
+
 import com.example.springcourse.entities.Product;
-import com.example.springcourse.services.CategoryService;
 import com.example.springcourse.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

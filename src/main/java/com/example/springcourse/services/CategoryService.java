@@ -1,9 +1,7 @@
 package com.example.springcourse.services;
 
 import com.example.springcourse.entities.Category;
-import com.example.springcourse.entities.User;
 import com.example.springcourse.repositories.CategoryRepository;
-import com.example.springcourse.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
