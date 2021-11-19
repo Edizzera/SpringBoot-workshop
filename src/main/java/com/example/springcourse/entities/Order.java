@@ -3,6 +3,7 @@ package com.example.springcourse.entities;
 
 import com.example.springcourse.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import org.aspectj.weaver.ast.Or;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -88,6 +89,14 @@ public class Order implements Serializable {
 
     public Set<OrderItem> getItems() {
         return items;
+    }
+
+    public Double getTotal() {
+        double sum = 0.0;
+        for(OrderItem x : items) {
+            sum += x.getSubtotal();
+        }
+        return sum;
     }
 
     @Override
